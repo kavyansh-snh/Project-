@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MediVault — Admit Patient</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a> | 
+    <a href="dashboard.html">Dashboard</a> | 
+    <a href="add-patient.html">Add Patient</a> | 
+    <a href="appointments.html">Appointments</a> | 
+    <a href="doctors.html">Doctors</a> | 
+    <a href="patients.html">Patients</a>
+</nav>
+<hr>
+
+<div class="shell">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark">MediVault</span>
+      <span class="brand-suffix">HMS</span>
+    </div>
+
+    <nav>
+      <div class="nav-group-label">Overview</div>
+      <ul class="nav-list">
+        <li><a href="dashboard.html"><span class="nav-icon"></span>Dashboard</a></li>
+      </ul>
+
+      <div class="nav-group-label">Care</div>
+      <ul class="nav-list">
+        <li><a href="patients.html"><span class="nav-icon"></span>Patients</a></li>
+        <li><a href="doctors.html"><span class="nav-icon"></span>Doctors</a></li>
+        <li><a href="appointments.html"><span class="nav-icon"></span>Appointments</a></li>
+        <li><a href="add-patient.html" class="active"><span class="nav-icon"></span>Admit patient</a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-footer">
+      MediVault HMS<br>Coursework build — v1.0
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <div class="topbar-title">Admit patient</div>
+        <div class="topbar-sub">NEW ADMISSION FORM</div>
+      </div>
+      <div class="topbar-right">
+        <div class="avatar-chip"><div class="avatar-circle"></div></div>
+      </div>
+    </header>
+
+    <main class="content">
+
+      <div class="page-header">
+        <div>
+          <span class="eyebrow">Registration</span>
+          <h1 style="font-size:26px;">New patient admission</h1>
+        </div>
+      </div>
+
+      <div class="card" style="max-width:820px;">
+
+        <div class="section-title">Patient details</div>
+        <div class="form-grid">
+          <div class="field-group">
+            <label class="field-label">Full name</label>
+            <input class="field-input" type="text" placeholder="e.g. Anjali Mehra">
+          </div>
+          <div class="field-group">
+            <label class="field-label">Date of birth</label>
+            <input class="field-input" type="text" placeholder="DD / MM / YYYY">
+          </div>
+          <div class="field-group">
+            <label class="field-label">Sex</label>
+            <input class="field-input" type="text" placeholder="Male / Female / Other">
+          </div>
+          <div class="field-group">
+            <label class="field-label">Blood group</label>
+            <input class="field-input" type="text" placeholder="e.g. O+">
+          </div>
+          <div class="field-group">
+            <label class="field-label">Contact number</label>
+            <input class="field-input" type="text" placeholder="+91">
+          </div>
+          <div class="field-group">
+            <label class="field-label">Emergency contact</label>
+            <input class="field-input" type="text" placeholder="Name and number">
+          </div>
+          <div class="field-group full">
+            <label class="field-label">Address</label>
+            <input class="field-input" type="text" placeholder="House no., street, city, state, PIN">
+          </div>
+        </div>
+
+        <div class="section-title">Admission details</div>
+        <div class="form-grid">
+          <div class="field-group">
+            <label class="field-label">Department</label>
+            <input class="field-input" type="text" placeholder="e.g. Cardiology">
+          </div>
+          <div class="field-group">
+            <label class="field-label">Attending doctor</label>
+            <input class="field-input" type="text" placeholder="e.g. Dr. Aditi Kapoor">
+          </div>
+          <div class="field-group">
+            <label class="field-label">Ward / bed number</label>
+            <input class="field-input" type="text" placeholder="e.g. Ward 3B - Bed 12">
+          </div>
+          <div class="field-group">
+            <label class="field-label">Admission type</label>
+            <input class="field-input" type="text" placeholder="Emergency / Scheduled / Referral">
+          </div>
+          <div class="field-group full">
+            <label class="field-label">Reason for admission</label>
+            <textarea class="field-input" placeholder="Brief clinical note..."></textarea>
+          </div>
+        </div>
+
+        <div class="section-title">Patient photo</div>
+        <div class="img-placeholder" style="width:120px; height:120px; font-size:10px;">
+          PATIENT PHOTO
+        </div>
+
+        <div class="form-actions">
+          <a href="patients.html" class="btn btn-secondary">Cancel</a>
+          <a href="patients.html" class="btn btn-primary">Admit patient</a>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+</div>
+
+</body>
+</html>

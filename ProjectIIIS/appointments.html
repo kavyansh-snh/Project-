@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MediVault — Appointments</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a> | 
+    <a href="dashboard.html">Dashboard</a> | 
+    <a href="add-patient.html">Add Patient</a> | 
+    <a href="appointments.html">Appointments</a> | 
+    <a href="doctors.html">Doctors</a> | 
+    <a href="patients.html">Patients</a>
+</nav>
+<hr>
+
+<div class="shell">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark">MediVault</span>
+      <span class="brand-suffix">HMS</span>
+    </div>
+
+    <nav>
+      <div class="nav-group-label">Overview</div>
+      <ul class="nav-list">
+        <li><a href="dashboard.html"><span class="nav-icon"></span>Dashboard</a></li>
+      </ul>
+
+      <div class="nav-group-label">Care</div>
+      <ul class="nav-list">
+        <li><a href="patients.html"><span class="nav-icon"></span>Patients</a></li>
+        <li><a href="doctors.html"><span class="nav-icon"></span>Doctors</a></li>
+        <li><a href="appointments.html" class="active"><span class="nav-icon"></span>Appointments</a></li>
+        <li><a href="add-patient.html"><span class="nav-icon"></span>Admit patient</a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-footer">
+      MediVault HMS<br>Coursework build — v1.0
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <div class="topbar-title">Appointments</div>
+        <div class="topbar-sub">MONDAY, 06 JUL 2026 &nbsp;·&nbsp; 52 SCHEDULED</div>
+      </div>
+      <div class="topbar-right">
+        <input class="search-box" type="text" placeholder="Search appointment, patient...">
+        <div class="avatar-chip"><div class="avatar-circle"></div></div>
+      </div>
+    </header>
+
+    <main class="content">
+
+      <div class="page-header">
+        <div>
+          <span class="eyebrow">Outpatient schedule</span>
+          <h1 style="font-size:26px;">Today's appointments</h1>
+        </div>
+        <a href="#" class="btn btn-primary">+ Book appointment</a>
+      </div>
+
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Patient</th>
+              <th>Doctor</th>
+              <th>Department</th>
+              <th>Type</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="mono">09:00 AM</td>
+              <td>Anjali Mehra</td>
+              <td>Dr. Kapoor</td>
+              <td>Cardiology</td>
+              <td>Follow-up</td>
+              <td><span class="pill discharged">Completed</span></td>
+            </tr>
+            <tr>
+              <td class="mono">09:30 AM</td>
+              <td>Suresh Pillai</td>
+              <td>Dr. Rao</td>
+              <td>General Medicine</td>
+              <td>New consult</td>
+              <td><span class="pill discharged">Completed</span></td>
+            </tr>
+            <tr>
+              <td class="mono">10:15 AM</td>
+              <td>Kavya Nambiar</td>
+              <td>Dr. Kapoor</td>
+              <td>Cardiology</td>
+              <td>Check-up</td>
+              <td><span class="pill discharged">Completed</span></td>
+            </tr>
+            <tr>
+              <td class="mono">11:00 AM</td>
+              <td>Vikram Desai</td>
+              <td>Dr. Nair</td>
+              <td>Orthopedics</td>
+              <td>Post-surgery review</td>
+              <td><span class="pill observation">In progress</span></td>
+            </tr>
+            <tr>
+              <td class="mono">11:45 AM</td>
+              <td>Sara Fernandes</td>
+              <td>Dr. Bhatt</td>
+              <td>Pediatrics</td>
+              <td>Vaccination</td>
+              <td><span class="pill stable">Upcoming</span></td>
+            </tr>
+            <tr>
+              <td class="mono">12:30 PM</td>
+              <td>Amit Choudhary</td>
+              <td>Dr. Malhotra</td>
+              <td>Neurology</td>
+              <td>New consult</td>
+              <td><span class="pill stable">Upcoming</span></td>
+            </tr>
+            <tr>
+              <td class="mono">02:00 PM</td>
+              <td>Ritu Saxena</td>
+              <td>Dr. Rao</td>
+              <td>General Medicine</td>
+              <td>Follow-up</td>
+              <td><span class="pill stable">Upcoming</span></td>
+            </tr>
+            <tr>
+              <td class="mono">02:45 PM</td>
+              <td>Naveen Kumar</td>
+              <td>Dr. Verma</td>
+              <td>Critical Care</td>
+              <td>Review</td>
+              <td><span class="pill critical">Urgent</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+</body>
+</html>

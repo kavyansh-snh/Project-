@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MediVault — Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <a href="index.html">Home</a> | 
+    <a href="dashboard.html">Dashboard</a> | 
+    <a href="add-patient.html">Add Patient</a> | 
+    <a href="appointments.html">Appointments</a> | 
+    <a href="doctors.html">Doctors</a> | 
+    <a href="patients.html">Patients</a>
+</nav>
+<hr>
+
+<div class="shell">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark">MediVault</span>
+      <span class="brand-suffix">HMS</span>
+    </div>
+
+    <nav>
+      <div class="nav-group-label">Overview</div>
+      <ul class="nav-list">
+        <li><a href="dashboard.html" class="active"><span class="nav-icon"></span>Dashboard</a></li>
+      </ul>
+
+      <div class="nav-group-label">Care</div>
+      <ul class="nav-list">
+        <li><a href="patients.html"><span class="nav-icon"></span>Patients</a></li>
+        <li><a href="doctors.html"><span class="nav-icon"></span>Doctors</a></li>
+        <li><a href="appointments.html"><span class="nav-icon"></span>Appointments</a></li>
+        <li><a href="add-patient.html"><span class="nav-icon"></span>Admit patient</a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-footer">
+      MediVault HMS<br>Coursework build — v1.0
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <div class="topbar-title">Good morning, Dr. Rao</div>
+        <div class="topbar-sub">MONDAY, 06 JUL 2026 &nbsp;·&nbsp; WARD 3, GENERAL MEDICINE</div>
+      </div>
+      <div class="topbar-right">
+        <input class="search-box" type="text" placeholder="Search patient, ID, doctor...">
+        <div class="avatar-chip">
+          <div class="avatar-circle"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+
+      <div class="page-header">
+        <div>
+          <span class="eyebrow">Today at a glance</span>
+          <h1 style="font-size:26px;">Hospital overview</h1>
+        </div>
+        <a href="add-patient.html" class="btn btn-primary">+ Admit new patient</a>
+      </div>
+
+      <!-- Vitals strip -->
+      <div class="vitals-strip">
+        <div class="vital">
+          <div class="vital-label">Admitted patients</div>
+          <div class="vital-value">128</div>
+          <div class="vital-delta">+6 since yesterday</div>
+        </div>
+        <div class="vital">
+          <div class="vital-label">Critical cases</div>
+          <div class="vital-value alert">7</div>
+          <div class="vital-delta">2 in ICU, 5 in HDU</div>
+        </div>
+        <div class="vital">
+          <div class="vital-label">Doctors on duty</div>
+          <div class="vital-value">34</div>
+          <div class="vital-delta">across 9 departments</div>
+        </div>
+        <div class="vital">
+          <div class="vital-label">Appointments today</div>
+          <div class="vital-value">52</div>
+          <div class="vital-delta">18 completed so far</div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <!-- Recent patients -->
+        <div class="card">
+          <div class="card-header">
+            <h3>Recently admitted</h3>
+            <a href="patients.html" class="link-small">View all patients →</a>
+          </div>
+          <table>
+            <thead>
+              <tr><th>Patient</th><th>Ward</th><th>Doctor</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Anjali Mehra <span class="mono" style="display:block; font-size:11px;">PT-10231</span></td>
+                <td class="mono">Ward 3B</td>
+                <td>Dr. Kapoor</td>
+                <td><span class="pill stable">Stable</span></td>
+              </tr>
+              <tr>
+                <td>Rohan Sinha <span class="mono" style="display:block; font-size:11px;">PT-10232</span></td>
+                <td class="mono">ICU-2</td>
+                <td>Dr. Verma</td>
+                <td><span class="pill critical">Critical</span></td>
+              </tr>
+              <tr>
+                <td>Meera Iyer <span class="mono" style="display:block; font-size:11px;">PT-10233</span></td>
+                <td class="mono">Ward 1A</td>
+                <td>Dr. Rao</td>
+                <td><span class="pill observation">Observation</span></td>
+              </tr>
+              <tr>
+                <td>Farhan Sheikh <span class="mono" style="display:block; font-size:11px;">PT-10229</span></td>
+                <td class="mono">Ward 2C</td>
+                <td>Dr. Nair</td>
+                <td><span class="pill discharged">Discharged</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- On duty doctors -->
+        <div class="card">
+          <div class="card-header">
+            <h3>On duty now</h3>
+            <a href="doctors.html" class="link-small">View roster →</a>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:16px;">
+            <div class="doctor-card">
+              <div class="img-placeholder" style="width:44px; height:44px; border-radius:50%; font-size:8px;">PHOTO</div>
+              <div class="doctor-info">
+                <h4>Dr. Aditi Kapoor</h4>
+                <div class="spec">Cardiology</div>
+              </div>
+            </div>
+            <div class="doctor-card">
+              <div class="img-placeholder" style="width:44px; height:44px; border-radius:50%; font-size:8px;">PHOTO</div>
+              <div class="doctor-info">
+                <h4>Dr. Sameer Verma</h4>
+                <div class="spec">Critical Care</div>
+              </div>
+            </div>
+            <div class="doctor-card">
+              <div class="img-placeholder" style="width:44px; height:44px; border-radius:50%; font-size:8px;">PHOTO</div>
+              <div class="doctor-info">
+                <h4>Dr. Priya Rao</h4>
+                <div class="spec">General Medicine</div>
+              </div>
+            </div>
+            <div class="doctor-card">
+              <div class="img-placeholder" style="width:44px; height:44px; border-radius:50%; font-size:8px;">PHOTO</div>
+              <div class="doctor-info">
+                <h4>Dr. Imran Nair</h4>
+                <div class="spec">Orthopedics</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <svg class="pulse-divider" viewBox="0 0 1000 20" style="margin:28px 0;">
+        <path d="M0,10 L440,10 L452,2 L464,18 L476,10 L1000,10" />
+      </svg>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-header"><h3>Bed occupancy</h3></div>
+          <p style="color:var(--ink-soft); font-size:13.5px;">General wards at 82% capacity. ICU at 58%. Maternity at 41%.</p>
+        </div>
+        <div class="card">
+          <div class="card-header"><h3>Pending lab reports</h3></div>
+          <p style="color:var(--ink-soft); font-size:13.5px;">14 reports awaiting doctor sign-off, 3 flagged urgent.</p>
+        </div>
+        <div class="card">
+          <div class="card-header"><h3>Discharge queue</h3></div>
+          <p style="color:var(--ink-soft); font-size:13.5px;">9 patients cleared for discharge pending paperwork.</p>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+</body>
+</html>

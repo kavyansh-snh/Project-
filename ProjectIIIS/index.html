@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MediVault — Sign In</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a> | 
+    <a href="dashboard.html">Dashboard</a> | 
+    <a href="add-patient.html">Add Patient</a> | 
+    <a href="appointments.html">Appointments</a> | 
+    <a href="doctors.html">Doctors</a> | 
+    <a href="patients.html">Patients</a>
+</nav>
+<hr>
+
+<div class="auth-shell">
+
+  <!-- Left panel -->
+  <div class="auth-side">
+    <div>
+      <div class="brand">
+        <span class="brand-mark">MediVault</span>
+        <span class="brand-suffix">HMS</span>
+      </div>
+
+      <svg class="pulse-divider" viewBox="0 0 400 20" style="margin:18px 0 30px 0;">
+        <path d="M0,10 L140,10 L152,2 L164,18 L176,10 L400,10" />
+      </svg>
+
+      <h1>One record, every ward, no chasing paper.</h1>
+      <p>Admissions, doctors, appointments and patient history — kept in one place so staff spend less time searching and more time treating.</p>
+    </div>
+
+    <div class="auth-quote">
+      "The chart should never be the reason a patient waits."
+    </div>
+  </div>
+
+  <!-- Right panel: form -->
+  <div class="auth-form-wrap">
+    <div class="auth-form">
+      <span class="field-label" style="margin-bottom:18px; display:block;">Staff sign in</span>
+      <h2 style="font-size:24px; margin-bottom:26px;">Welcome back</h2>
+
+      <div class="role-toggle">
+        <div class="role-option selected">Doctor</div>
+        <div class="role-option">Nurse</div>
+        <div class="role-option">Admin</div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="staff-id">Staff ID</label>
+        <input class="field-input" type="text" id="staff-id" placeholder="e.g. MD-2291">
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="password">Password</label>
+        <input class="field-input" type="password" id="password" placeholder="••••••••••">
+      </div>
+
+      <div class="field-group" style="display:flex; align-items:center; justify-content:space-between; font-size:12.5px; color:var(--ink-soft);">
+        <label><input type="checkbox"> Keep me signed in</label>
+        <a href="#" style="color:var(--teal-mid); font-weight:600;">Forgot password?</a>
+      </div>
+
+      <a href="dashboard.html" class="btn btn-primary btn-block">Sign in</a>
+
+      <p class="auth-footnote">Not staff? <a href="#" style="color:var(--teal-mid); font-weight:600;">Patient portal login</a></p>
+      
+  
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

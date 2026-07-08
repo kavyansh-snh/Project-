@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MediVault — Patients</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a> | 
+    <a href="dashboard.html">Dashboard</a> | 
+    <a href="add-patient.html">Add Patient</a> | 
+    <a href="appointments.html">Appointments</a> | 
+    <a href="doctors.html">Doctors</a> | 
+    <a href="patients.html">Patients</a>
+</nav>
+<hr>
+
+<div class="shell">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark">MediVault</span>
+      <span class="brand-suffix">HMS</span>
+    </div>
+
+    <nav>
+      <div class="nav-group-label">Overview</div>
+      <ul class="nav-list">
+        <li><a href="dashboard.html"><span class="nav-icon"></span>Dashboard</a></li>
+      </ul>
+
+      <div class="nav-group-label">Care</div>
+      <ul class="nav-list">
+        <li><a href="patients.html" class="active"><span class="nav-icon"></span>Patients</a></li>
+        <li><a href="doctors.html"><span class="nav-icon"></span>Doctors</a></li>
+        <li><a href="appointments.html"><span class="nav-icon"></span>Appointments</a></li>
+        <li><a href="add-patient.html"><span class="nav-icon"></span>Admit patient</a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-footer">
+      MediVault HMS<br>Coursework build — v1.0
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <div class="topbar-title">Patients</div>
+        <div class="topbar-sub">128 ADMITTED &nbsp;·&nbsp; 9 DEPARTMENTS</div>
+      </div>
+      <div class="topbar-right">
+        <input class="search-box" type="text" placeholder="Search patient, ID, ward...">
+        <div class="avatar-chip"><div class="avatar-circle"></div></div>
+      </div>
+    </header>
+
+    <main class="content">
+
+      <div class="page-header">
+        <div>
+          <span class="eyebrow">Patient registry</span>
+          <h1 style="font-size:26px;">All patients</h1>
+        </div>
+        <a href="add-patient.html" class="btn btn-primary">+ Admit new patient</a>
+      </div>
+
+      <div class="card" style="margin-bottom:20px; display:flex; gap:10px;">
+        <div class="field-input" style="width:auto; flex:1; background:var(--bg);">Ward: All</div>
+        <div class="field-input" style="width:auto; flex:1; background:var(--bg);">Status: All</div>
+        <div class="field-input" style="width:auto; flex:1; background:var(--bg);">Doctor: All</div>
+      </div>
+
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>Patient</th>
+              <th>ID</th>
+              <th>Age / Sex</th>
+              <th>Ward</th>
+              <th>Attending doctor</th>
+              <th>Admitted</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="display:flex; align-items:center; gap:10px;">
+                <div class="img-placeholder" style="width:32px; height:32px; border-radius:50%; font-size:7px;">PHOTO</div>
+                Anjali Mehra
+              </td>
+              <td class="mono">PT-10231</td>
+              <td>34 / F</td>
+              <td class="mono">Ward 3B</td>
+              <td>Dr. Kapoor</td>
+              <td class="mono">02 Jul 2026</td>
+              <td><span class="pill stable">Stable</span></td>
+            </tr>
+            <tr>
+              <td style="display:flex; align-items:center; gap:10px;">
+                <div class="img-placeholder" style="width:32px; height:32px; border-radius:50%; font-size:7px;">PHOTO</div>
+                Rohan Sinha
+              </td>
+              <td class="mono">PT-10232</td>
+              <td>58 / M</td>
+              <td class="mono">ICU-2</td>
+              <td>Dr. Verma</td>
+              <td class="mono">04 Jul 2026</td>
+              <td><span class="pill critical">Critical</span></td>
+            </tr>
+            <tr>
+              <td style="display:flex; align-items:center; gap:10px;">
+                <div class="img-placeholder" style="width:32px; height:32px; border-radius:50%; font-size:7px;">PHOTO</div>
+                Meera Iyer
+              </td>
+              <td class="mono">PT-10233</td>
+              <td>27 / F</td>
+              <td class="mono">Ward 1A</td>
+              <td>Dr. Rao</td>
+              <td class="mono">05 Jul 2026</td>
+              <td><span class="pill observation">Observation</span></td>
+            </tr>
+            <tr>
+              <td style="display:flex; align-items:center; gap:10px;">
+                <div class="img-placeholder" style="width:32px; height:32px; border-radius:50%; font-size:7px;">PHOTO</div>
+                Farhan Sheikh
+              </td>
+              <td class="mono">PT-10229</td>
+              <td>45 / M</td>
+              <td class="mono">Ward 2C</td>
+              <td>Dr. Nair</td>
+              <td class="mono">28 Jun 2026</td>
+              <td><span class="pill discharged">Discharged</span></td>
+            </tr>
+            <tr>
+              <td style="display:flex; align-items:center; gap:10px;">
+                <div class="img-placeholder" style="width:32px; height:32px; border-radius:50%; font-size:7px;">PHOTO</div>
+                Kavya Nambiar
+              </td>
+              <td class="mono">PT-10234</td>
+              <td>61 / F</td>
+              <td class="mono">Ward 4A</td>
+              <td>Dr. Kapoor</td>
+              <td class="mono">06 Jul 2026</td>
+              <td><span class="pill stable">Stable</span></td>
+            </tr>
+            <tr>
+              <td style="display:flex; align-items:center; gap:10px;">
+                <div class="img-placeholder" style="width:32px; height:32px; border-radius:50%; font-size:7px;">PHOTO</div>
+                Vikram Desai
+              </td>
+              <td class="mono">PT-10235</td>
+              <td>39 / M</td>
+              <td class="mono">Ward 2A</td>
+              <td>Dr. Rao</td>
+              <td class="mono">06 Jul 2026</td>
+              <td><span class="pill observation">Observation</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+</body>
+</html>

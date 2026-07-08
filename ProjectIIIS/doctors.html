@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MediVault — Doctors</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a> | 
+    <a href="dashboard.html">Dashboard</a> | 
+    <a href="add-patient.html">Add Patient</a> | 
+    <a href="appointments.html">Appointments</a> | 
+    <a href="doctors.html">Doctors</a> | 
+    <a href="patients.html">Patients</a>
+</nav>
+<hr>
+
+<div class="shell">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark">MediVault</span>
+      <span class="brand-suffix">HMS</span>
+    </div>
+
+    <nav>
+      <div class="nav-group-label">Overview</div>
+      <ul class="nav-list">
+        <li><a href="dashboard.html"><span class="nav-icon"></span>Dashboard</a></li>
+      </ul>
+
+      <div class="nav-group-label">Care</div>
+      <ul class="nav-list">
+        <li><a href="patients.html"><span class="nav-icon"></span>Patients</a></li>
+        <li><a href="doctors.html" class="active"><span class="nav-icon"></span>Doctors</a></li>
+        <li><a href="appointments.html"><span class="nav-icon"></span>Appointments</a></li>
+        <li><a href="add-patient.html"><span class="nav-icon"></span>Admit patient</a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-footer">
+      MediVault HMS<br>Coursework build — v1.0
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <div class="topbar-title">Doctors</div>
+        <div class="topbar-sub">34 ON DUTY &nbsp;·&nbsp; 9 DEPARTMENTS</div>
+      </div>
+      <div class="topbar-right">
+        <input class="search-box" type="text" placeholder="Search doctor, department...">
+        <div class="avatar-chip"><div class="avatar-circle"></div></div>
+      </div>
+    </header>
+
+    <main class="content">
+
+      <div class="page-header">
+        <div>
+          <span class="eyebrow">Staff directory</span>
+          <h1 style="font-size:26px;">Doctor roster</h1>
+        </div>
+        <a href="#" class="btn btn-secondary">+ Add doctor</a>
+      </div>
+
+      <div class="grid-3">
+
+        <div class="card">
+          <div class="doctor-card" style="margin-bottom:14px;">
+            <div class="img-placeholder" style="width:56px; height:56px; border-radius:50%; font-size:8px;">PHOTO</div>
+            <div class="doctor-info">
+              <h4>Dr. Aditi Kapoor</h4>
+              <div class="spec">Cardiology</div>
+            </div>
+          </div>
+          <div class="meta" style="font-size:12.5px; color:var(--ink-soft); line-height:1.7;">
+            ID: <span class="mono">DR-0114</span><br>
+            Ward: Cardiac Care Unit<br>
+            Patients today: 9<br>
+            Status: <span class="pill stable">On duty</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="doctor-card" style="margin-bottom:14px;">
+            <div class="img-placeholder" style="width:56px; height:56px; border-radius:50%; font-size:8px;">PHOTO</div>
+            <div class="doctor-info">
+              <h4>Dr. Sameer Verma</h4>
+              <div class="spec">Critical Care</div>
+            </div>
+          </div>
+          <div class="meta" style="font-size:12.5px; color:var(--ink-soft); line-height:1.7;">
+            ID: <span class="mono">DR-0098</span><br>
+            Ward: ICU<br>
+            Patients today: 6<br>
+            Status: <span class="pill stable">On duty</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="doctor-card" style="margin-bottom:14px;">
+            <div class="img-placeholder" style="width:56px; height:56px; border-radius:50%; font-size:8px;">PHOTO</div>
+            <div class="doctor-info">
+              <h4>Dr. Priya Rao</h4>
+              <div class="spec">General Medicine</div>
+            </div>
+          </div>
+          <div class="meta" style="font-size:12.5px; color:var(--ink-soft); line-height:1.7;">
+            ID: <span class="mono">DR-0132</span><br>
+            Ward: General, Ward 1–3<br>
+            Patients today: 14<br>
+            Status: <span class="pill stable">On duty</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="doctor-card" style="margin-bottom:14px;">
+            <div class="img-placeholder" style="width:56px; height:56px; border-radius:50%; font-size:8px;">PHOTO</div>
+            <div class="doctor-info">
+              <h4>Dr. Imran Nair</h4>
+              <div class="spec">Orthopedics</div>
+            </div>
+          </div>
+          <div class="meta" style="font-size:12.5px; color:var(--ink-soft); line-height:1.7;">
+            ID: <span class="mono">DR-0087</span><br>
+            Ward: Ortho, Ward 2<br>
+            Patients today: 7<br>
+            Status: <span class="pill observation">In surgery</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="doctor-card" style="margin-bottom:14px;">
+            <div class="img-placeholder" style="width:56px; height:56px; border-radius:50%; font-size:8px;">PHOTO</div>
+            <div class="doctor-info">
+              <h4>Dr. Neha Bhatt</h4>
+              <div class="spec">Pediatrics</div>
+            </div>
+          </div>
+          <div class="meta" style="font-size:12.5px; color:var(--ink-soft); line-height:1.7;">
+            ID: <span class="mono">DR-0155</span><br>
+            Ward: Pediatric Wing<br>
+            Patients today: 11<br>
+            Status: <span class="pill stable">On duty</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="doctor-card" style="margin-bottom:14px;">
+            <div class="img-placeholder" style="width:56px; height:56px; border-radius:50%; font-size:8px;">PHOTO</div>
+            <div class="doctor-info">
+              <h4>Dr. Arjun Malhotra</h4>
+              <div class="spec">Neurology</div>
+            </div>
+          </div>
+          <div class="meta" style="font-size:12.5px; color:var(--ink-soft); line-height:1.7;">
+            ID: <span class="mono">DR-0061</span><br>
+            Ward: Neuro Care<br>
+            Patients today: 5<br>
+            Status: <span class="pill discharged">Off duty</span>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+</div>
+
+</body>
+</html>
