@@ -1,0 +1,199 @@
+/* ===================== RESET ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #1a1a1a; /* fallback dark background */
+
+  /* Optional: add a background image instead of solid color
+     background-image: url("images/bg.jpg");
+     background-size: cover;
+     background-position: center;
+  */
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===================== NAVBAR ===================== */
+.navbar {
+  padding: 15px 40px;
+  background-color: #282828;
+}
+
+.logo-text {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.logo-text span {
+  color: #ffa116; /* LeetCode orange */
+}
+
+/* If using a logo image instead of text:
+.logo-img {
+  height: 35px;
+}
+*/
+
+/* ===================== LOGIN WRAPPER ===================== */
+.login-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 15px;
+}
+
+/* ===================== LOGIN CARD ===================== */
+.login-card {
+  background-color: #282828;
+  padding: 35px 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.login-title {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+/* ===================== FORM ===================== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  color: #b3b3b3;
+  font-size: 13px;
+  margin-bottom: 5px;
+  margin-top: 12px;
+}
+
+.login-form input {
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: 1px solid #3e3e3e;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #ffa116;
+}
+
+.forgot-link {
+  color: #ffa116;
+  font-size: 13px;
+  text-decoration: none;
+  margin-top: 10px;
+  align-self: flex-end;
+}
+
+.btn-login {
+  margin-top: 20px;
+  background-color: #ffa116;
+  color: #1a1a1a;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background-color: #e6910f;
+}
+
+/* ===================== SIGNUP TEXT ===================== */
+.signup-text {
+  text-align: center;
+  color: #b3b3b3;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.signup-text a {
+  color: #ffa116;
+  text-decoration: none;
+}
+
+/* ===================== DIVIDER ===================== */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #666666;
+  font-size: 12px;
+  margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #3e3e3e;
+}
+
+.divider span {
+  padding: 0 10px;
+}
+
+/* ===================== SOCIAL LOGIN ===================== */
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #3e3e3e;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-social:hover {
+  background-color: #333333;
+}
+
+.btn-social img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ===================== FOOTER ===================== */
+.footer {
+  text-align: center;
+  color: #666666;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 25px 20px;
+  }
+}
